@@ -1,0 +1,12 @@
+<h1>Movies</h1>
+<ul>
+  <li *ngFor="let movie of movies">
+    <h2>{{ movie.title }}</h2>
+    <p>{{ movie.description }}</p>
+    <p>Rating: {{ movie.rating }}</p>
+    <img [src]="movie.thumbnail" alt="Movie Thumbnail">
+    <!-- Add other movie details as needed -->
+  </li>
+</ul>
+
+
